@@ -1,0 +1,50 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+}
+
+.hero{
+background:linear-gradient(to right,#4facfe,#00f2fe);
+color:white;
+padding:100px 20px;
+animation:fadeIn 2s;
+}
+
+.card{
+transition:0.5s;
+margin-top:20px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.btn{
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+.hero{
+padding:60px 20px;
+}
+
+h1{
+font-size:30px;
+}
+}
